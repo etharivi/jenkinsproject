@@ -8,7 +8,7 @@ pipeline {
 	stages {
 	    stage('Fetch code') {
             steps {
-               git branch: 'atom', url: 'https://github.com/hkhcoder/vprofile-project.git'
+               git branch: 'main', url: 'https://github.com/etharivi/jenkinsproject.git'
             }
 
 	    }
@@ -20,7 +20,7 @@ pipeline {
 
 	        post {
 	           success {
-	              echo 'Now Archiving it...'
+	              echo 'Now Archiving it for Hariiiiiii...'
 	              archiveArtifacts artifacts: '**/target/*.war'
 	           }
 	        }
